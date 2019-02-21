@@ -1,15 +1,15 @@
+
+version "0.0.01"
+
 description "vRP Leo"
 
 dependency "vrp"
 
--- client_scripts{ 
-  -- "@vrp/lib/Proxy.lua",
-  -- "client.lua"
--- }
+client_scripts "client.lua"
 
-server_scripts{ 
-  "@vrp/lib/Tunnel.lua",
-  "server.lua"
-}
+server_scripts "server.lua"
+
+
+
 
 "version.lua"
