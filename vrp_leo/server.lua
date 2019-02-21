@@ -18,14 +18,15 @@ function leo_job()
     local users = vRP.UsersisCop
 
 LocalCop = false
-RegisterServerEvent ("chatMessage, function msg")
-    while true do
-        Citizen.Wait(1)
+
+AddEventHandler ("chatMessage, function msg")
         if vRP.UserIsCop
     then
-        TriggerEvent("chatMessage", "", { 255, 0, 0 }, "10-4 Showing you 10-8 available.")
-		end
-	end
-end
+        TriggerEvent("chatMessage"), "[Dispatch]", { 255, 0, 0 }, "10-4 Showing you 10-8 available."
+    end
+        if vRP.UserIsNotCop 
+    then
+        TriggerEvent("chatMessage"), "[Dispatch]", { 255, 0, 0 }, "You Are not a cop!"
+end)
 
 
