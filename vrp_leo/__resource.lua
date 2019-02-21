@@ -5,11 +5,6 @@ description "vRP Leo"
 
 dependency "vrp"
 
-client_scripts "client.lua"
+client_script "client.lua"
 
-server_scripts "server.lua"
-
-
-
-
-"version.lua"
+server_script "server.lua"
