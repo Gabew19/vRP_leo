@@ -1,8 +1,8 @@
 local LatestVersion = ''; CurrentVersion = '0.01'
 local GithubResourceName = 'vRP_leo'
 
-PerformHttpRequest('https://github.com/Gabew19/vRP_leo.git/versions/leo_version.txt' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
-	PerformHttpRequest('https://github.com/Gabew19/vRP_leo.git/versions/leo_version.txt' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
+PerformHttpRequest('https://github.com/Gabew19/vRP_leo/blob/master/vrp_leo/version.txt' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
+	PerformHttpRequest('https://github.com/Gabew19/vRP_leo/blob/master/vrp_leo/version.txt' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
 		LatestVersion = NewestVersion
 		print('\n')
 		print('##############')
