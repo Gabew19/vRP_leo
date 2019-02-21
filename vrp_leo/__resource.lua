@@ -12,4 +12,4 @@ server_scripts{
   "server.lua"
 }
 
-"version.lua",
+"version.lua"
