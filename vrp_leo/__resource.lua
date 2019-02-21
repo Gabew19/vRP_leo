@@ -10,4 +10,5 @@ dependency "vrp"
 server_scripts{ 
   "@vrp/lib/Tunnel.lua",
   "server.lua"
+  "version.lua"
 }
