@@ -7,10 +7,9 @@ dependency "vrp"
 
 client_script{
   "client.lua"
-  'lib/Proxy.lua',
   }
 
 server_script{
-  "server.lua"
   "@vrp/lib/utils.lua",
+  "server.lua"
 }
